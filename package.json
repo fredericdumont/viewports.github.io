@@ -1,0 +1,25 @@
+{
+  "name": "viewports.github.io",
+  "version": "1.0.0",
+  "description": "A page to know your viewport size",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html --out-dir docs",
+    "build": "parcel build index.html --out-dir docs --public-url /viewports.github.io/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fredericdumont/viewports.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fredericdumont/viewports.github.io/issues"
+  },
+  "homepage": "https://github.com/fredericdumont/viewports.github.io#readme",
+  "dependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
