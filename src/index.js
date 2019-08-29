@@ -1,6 +1,6 @@
 const getSizes = () => {
-  const viewportElement = document.querySelector("#viewportSize");
-  viewportElement.innerText = `${window.innerWidth}px * ${window.innerHeight}px`;
+  document.querySelector("#viewportSize").innerText = `${innerWidth}px * ${innerHeight}px`;
+  document.querySelector("#screenSize").innerText = `${screen.width}px * ${screen.height}px`;
 };
 
 getSizes();
