@@ -119,12 +119,8 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"src/index.js":[function(require,module,exports) {
 var getSizes = function getSizes() {
-  // viewport size
-  document.querySelector("#viewportSize").innerText = "".concat(innerWidth, "px * ").concat(innerHeight, "px"); // screen height
-
-  var screenHeight = screen.height * devicePixelRatio;
-  var screenWidth = screen.width * devicePixelRatio;
-  document.querySelector("#screenSize").innerText = "".concat(screenWidth, "px * ").concat(screenHeight, "px");
+  document.querySelector("#viewportSize").innerText = "".concat(innerWidth, "px * ").concat(innerHeight, "px");
+  document.querySelector("#screenSize").innerText = "".concat(screen.width, "px * ").concat(screen.height, "px");
 };
 
 getSizes();
@@ -157,7 +153,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56456" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57470" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
