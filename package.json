@@ -20,6 +20,6 @@
   },
   "homepage": "https://github.com/fredericdumont/viewports.github.io#readme",
   "dependencies": {
-    "parcel-bundler": "^1.12.3"
+    "parcel-bundler": "^1.12.4"
   }
 }
